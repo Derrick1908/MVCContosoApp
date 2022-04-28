@@ -137,6 +137,19 @@
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="DAL\SchoolInitializer.cs" />
+    <Compile Include="Migrations\202204280005111_InitialCreate.cs" />
+    <Compile Include="Migrations\202204280005111_InitialCreate.designer.cs">
+      <DependentUpon>202204280005111_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204280015514_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\202204280015514_MaxLengthOnNames.designer.cs">
+      <DependentUpon>202204280015514_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204280019328_ColumnFirstName.cs" />
+    <Compile Include="Migrations\202204280019328_ColumnFirstName.designer.cs">
+      <DependentUpon>202204280019328_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -204,6 +217,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202204280005111_InitialCreate.resx">
+      <DependentUpon>202204280005111_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204280015514_MaxLengthOnNames.resx">
+      <DependentUpon>202204280015514_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204280019328_ColumnFirstName.resx">
+      <DependentUpon>202204280019328_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
