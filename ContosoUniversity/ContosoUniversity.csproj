@@ -149,7 +149,12 @@
     <Compile Include="Migrations\202204280019328_ColumnFirstName.designer.cs">
       <DependentUpon>202204280019328_ColumnFirstName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205040209194_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202205040209194_ComplexDataModel.designer.cs">
+      <DependentUpon>202205040209194_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -229,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204280019328_ColumnFirstName.resx">
       <DependentUpon>202204280019328_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205040209194_ComplexDataModel.resx">
+      <DependentUpon>202205040209194_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

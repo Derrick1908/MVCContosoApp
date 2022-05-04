@@ -125,7 +125,7 @@
         void AddOrUpdateInstructor(SchoolContext context, string courseTitle, string instructorName)
         {
             var courses = context.Courses.SingleOrDefault(c => c.Title == courseTitle);
-            var instructors = context.Instructors.SingleOrDefault(i => i.LastName == instructorName);
+            var instructors = courses.Instructors.SingleOrDefault(i => i.LastName == instructorName);
             if (instructors == null)                //Add an Instructor to a course only if it is not present in the Course already.
                 courses.Instructors.Add(context.Instructors.Single(i => i.LastName == instructorName));     
         }
